@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+        /*▬▬▬ fonte baixada ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬*/
+        @font-face {
+            font-family: 'Android';
+            src: url('./fontes/idroid.otf') format('opentype');
+            font-weight: normal;
+        }
+        :root {
+            --cor0: #C5EBD6;
+            --cor1: #83E1AD;
+            --cor2: #3DDC84;
+            --cor3: #2FA866;
+            --cor4: #1A5C37;
+            --cor5: #063D1E;
+            --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+            --fonte-destaque: 'Bebas Neue', 'Cursive';
+            --fonte-android: 'Android', 'Cursive';
+        }
+        /*▬▬▬ HEADER▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬*/
+        header {
+            background-color: rgb(175, 173, 173);
+        }
+        header > h1 {
+            background-color: antiquewhite;
+            color: var(--cor5);
+            font-family: var(--fonte-destaque);
+        }
+        header > h2 {
+                background-color: antiquewhite;
+                font-family: var(--fonte-android);
+        }
+        
+        /*▬▬▬ MAIN   ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬*/
+
+        main {
+            background-color: rgb(209, 162, 211);
+        }
+        main > h1 {
+            background-color:  rgb(209, 162, 211);
+            font-family: var(--fonte-destaque);
+            color: white;
+
+        }
+        main > h2 {
+            background-color: rgb(126, 126, 194);
+            font-family: var(--fonte-android);
+        }
+        /*▬▬▬ FOOTER ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬*/
+
+        xfooter {
+            background-color: greenyellow;
+        }
+        xfooter > p {
+            background-color: white;
+        }
+        x.Beatles {
+            background-color: azure;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Título Principal do Header</h1>
+        <h2>Título Secundário do Header</h1>
+        <p class="Luiz">Luiz Carvalho de Araújo Filho, nascido em 22 de agosto de 1958 na cidade de Maceió</p>
+        <p>Regina Cabral de SAraújo, nascida em 08 de Abril de 1914 no sítio Coité</p>
+    </header>
+    <main>
+        <h1>Título Principal do Main</h1>
+        <h2>Título Secundário do Main</h1>
+        <p class="Beatles" > The Beatles, grupo Inglês formado por John Lennon, Paul McCartney, Ringo Star e George Harrison.</p>
+        <p>Roberto Carlos Braga, cantor brasileiro nascido em 19 de abril de 1941 na cidade de Cachoeiro do Itapemirim</p>
+    </main>
+    <footer>
+        <h1>Título Principal do Rodapé</h1>
+        <h2>Título Secundário do Rodapé</h2>
+        <p>Este é o parágrafo 1 do Rodapé</p>
+        <p>Este é o parágrafo 2 do Rodapé</p>
+    </footer>
+
+</body>
+</html>
