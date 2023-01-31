@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*--Importando fontes - google fontes----------*/
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 
 /*--------Conf - Globais------------*/
@@ -13,12 +14,15 @@
 * {
     margin: 0px;
     margin: 0px;
+    font-size: 1em;
 }
 
 html, body {
    min-height: 100vh;
    background-color: darkgray;
+   font-family:var(--fonte1) ;
 }
+
 /*-----------HEADER-----------------*/
 header {
     background-color: black;
@@ -28,8 +32,10 @@ header {
 
 header > h1 {
     padding-top: 50px;
-    /*text-transform: uppercase; */
+    /* text-transform: uppercase; */
     font-variant: small-caps;
+    font-family: var(--fonte2);
+   /* font-size: 2em;             */
     font-size: 10vw;
 }
 
@@ -52,25 +58,44 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
     font-size: 3.5vw;
+}
+
+section > p {
+    padding-bottom: 1em;
 }
 
 section.normal {
     background-color: white;
     color: black;
 }
+
 section.imagem {
     background-color: rgb(51, 51, 51);
     color: white;
-}
-section.imagem > p {
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.253);
-    padding: 5px;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.411);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-section > p {
-    padding-bottom: 2em;
+section.imagem > p {
+    /* width: 400px;    */
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.151);
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    /* background-size: cover;  */
+}
+
+section#img02 {
+    background-image: url(../imagens/background002.jpg);
+    /* background-size: cover;  */
 }
 /*-----------FOOTER-----------------*/
 footer {
