@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -8,16 +11,17 @@
 </head>
 <body>
     <h1>Teste de Formulário</h1>
-   <form action="cadastro.php" method="get">
+   <form action="cadastro.php" method="post">
         <p>
             <label for="iusu">Usuário:</label>
-            <input type="text" name="usu" id="iusu">
+            <input type="text" name="usu" id="iusu" required placeholder="Luiz Carvalho"> 
         </p>
 
         <p>
             <label for="isen"> Senha: </label>
             <input type="password" name="sen" id="isen">
         </p>
+
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
